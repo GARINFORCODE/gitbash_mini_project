@@ -1,0 +1,104 @@
+:root {
+    --bp-pink: #f25287;
+    --bp-pink-hover: #ff7f95;
+    --bp-black: #000000;
+    --bp-dark-gray: #121212;
+    --bp-light-gray: #f8f9fa;
+}
+.txt-pink {
+    color: var(--bp-pink-hover) !important;
+}
+.bg-reddd {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+}
+.card.bg-white {
+    background-color: var(--bp-dark-gray) !important;
+    border: 1px solid #222 !important;
+    color: #ffffff !important;
+}
+.text-secondary {
+    color: var(--bp-pink) !important;
+}
+.form-label {
+    color: #e0e0e0;
+}
+.form-control {
+    background-color: #222 !important;
+    border-color: #444 !important;
+    color: #fff !important;
+}
+.form-control:focus {
+    border-color: var(--bp-pink) !important;
+    box-shadow: 0 0 0 0.25rem rgba(242, 82, 135, 0.25) !important;
+}
+.btn-danger,
+.btn-outline-danger {
+    background-color: var(--bp-pink) !important;
+    border-color: var(--bp-pink) !important;
+    transition: all 0.3s ease;
+}
+.btn-danger:hover {
+    background-color: var(--bp-pink-hover) !important;
+    border-color: var(--bp-pink-hover) !important;
+    transform: translateY(-2px);
+}
+.btn-outline-danger {
+    background-color: transparent !important;
+    color: var(--bp-pink) !important;
+    border: 2px solid var(--bp-pink) !important;
+}
+.btn-outline-danger:hover {
+    background-color: var(--bp-pink) !important;
+    color: #fff !important;
+}
+.max-w-md {
+    max-width: 500px;
+}
+.max-w-xl {
+    max-width: 800px;
+}
+.object-fit-cover {
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    header h1.display-2 {
+        font-size: 2.5rem !important;
+    }
+    section h2.display-3,
+    section h2.display-1 {
+        font-size: 2rem !important;
+    }
+    header p.lead,
+    section p.lead {
+        font-size: 1rem !important;
+        padding: 0 10px;
+    }
+    header,
+    section {
+        height: auto !important;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .tempat-duduk .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px !important;
+        justify-content: center;
+    }
+    .kursi.col-md-2,
+    .col-md-4 {
+        flex: 0 0 calc(50% - 10px) !important;
+        width: calc(50% - 10px) !important;
+        height: 55px !important;
+    }
+    .tempat-duduk .card.col-md-4 {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+    footer {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
